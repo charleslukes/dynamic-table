@@ -18,7 +18,7 @@
     "checksize": "rollup -c ; cat prime-table.bundled.js | gzip -9 | wc -c ; rm prime-table.bundled.js",
     "rollup": "rollup -c",
     "heroku-postbuild": "npm run build && npm run rollup",
-    "start": "npm run serve",
+    "start": "node prime-table.bundled.js",
     "postinstall": "npm run build"
   },
   "keywords": [
