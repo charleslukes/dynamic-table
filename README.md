@@ -23,7 +23,7 @@ npm i
 ```
 
 **NB:**
-Ensure you must have node installed.
+Ensure you have node installed.
 
 ## Build
 
