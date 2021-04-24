@@ -6,18 +6,17 @@
   "module": "dist/prime-table.js",
   "type": "module",
   "scripts": {
-    "tsc": "tsc",
     "build": "tsc",
     "build:watch": "tsc --watch",
     "format": "prettier src/* --write",
-    "serve": "tsc && es-dev-server --node-resolve --watch",
+    "serve": "npm run build && es-dev-server --node-resolve --watch",
     "test": "karma start karma.conf.cjs",
     "test:watch": "karma start karma.conf.cjs --auto-watch=true --single-run=false",
     "test:update-snapshots": "karma start karma.conf.cjs --update-snapshots",
     "test:prune-snapshots": "karma start karma.conf.cjs --prune-snapshots",
     "checksize": "rollup -c ; cat prime-table.bundled.js | gzip -9 | wc -c ; rm prime-table.bundled.js",
     "rollup": "rollup -c",
-    "heroku-postbuild": "npm run tsc && npm run rollup",
+    "heroku-postbuild": "npm run build && npm run rollup",
     "start": "npm run serve"
   },
   "keywords": [
