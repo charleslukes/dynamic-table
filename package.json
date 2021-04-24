@@ -6,6 +6,7 @@
   "module": "dist/prime-table.js",
   "type": "module",
   "scripts": {
+    "tsc": "tsc",
     "build": "tsc",
     "build:watch": "tsc --watch",
     "format": "prettier src/* --write",
@@ -17,7 +18,8 @@
     "checksize": "rollup -c ; cat prime-table.bundled.js | gzip -9 | wc -c ; rm prime-table.bundled.js",
     "rollup": "rollup -c",
     "heroku-postbuild": "npm run build && npm run rollup",
-    "start": "npm run serve"
+    "start": "npm run serve",
+    "postinstall": "npm run build"
   },
   "keywords": [
     "web-components",
