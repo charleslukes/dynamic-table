@@ -4,7 +4,7 @@ This project includes a simple multiplicative prime table using LitElement with 
 
 ## Thoughts
 
-This looks like a straight forward test without much complexity, using React, Angular etc for something as simple as this didn't make much sense. I decided to use LitElement, a very light weight library (5.8kb gzip) for building web components. I also love the idea of web components which is "write ones run everywhere".
+This looks like a straight forward test without much complexity, using React, Angular etc for something as simple as this didn't make much sense to me. I decided to use LitElement, a very light weight library (5.8kb gzip) for building web components. I also love the idea of web components which is "write onces run everywhere".
 
 ## Setup
 
