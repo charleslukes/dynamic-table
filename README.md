@@ -6,6 +6,14 @@ This project includes a simple multiplicative prime table using LitElement with 
 
 Due to the nature of the test, using React, Angular etc for something for it didn't make much sense to me. I decided to use LitElement, a very light weight library (5.8kb gzip) for building web components. I also love the idea of web components which is "write onces run everywhere".
 
+## Clone
+
+Clone the repository
+
+```bash
+  git clone https://github.com/charleslukes/dynamic-table.git
+```
+
 ## Setup
 
 Install dependencies:
